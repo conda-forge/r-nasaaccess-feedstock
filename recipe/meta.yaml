@@ -1,4 +1,4 @@
-{% set version = '3.2.0' %}
+{% set version = '3.3.0' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -9,8 +9,8 @@ package:
 
 source:
 
-  url: https://github.com/nasa/NASAaccess/archive/v3.2.0.tar.gz
-  sha256: 804d6fdc7956745c65f265603095bae8b3d8a81dc1e427e0429b977e036dfb98
+  url: https://github.com/nasa/NASAaccess/archive/v3.3.0.tar.gz
+  sha256: ad1d9fff2bcd5ade415ea252b2b692e5af1aefb7ab1d4483f15830bc2849619b
 
 build:
   merge_build_host: True  # [win]
@@ -31,7 +31,7 @@ requirements:
     - {{ posix }}zip               # [win]
 
   host:
-    - r-base =4.1
+    - r-base
     - r-xml
     - r-ggmap
     - r-ggplot2
@@ -47,7 +47,7 @@ requirements:
     - r-stringr
 
   run:
-    - r-base =4.1
+    - r-base
     - r-xml
     - r-ggmap
     - r-ggplot2
