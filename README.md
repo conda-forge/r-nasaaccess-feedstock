@@ -1,19 +1,19 @@
-About r-nasaaccess
-==================
+About r-nasaaccess-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nasaaccess-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/nasa/NASAaccess
 
 Package license: NASA-1.3
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nasaaccess-feedstock/blob/main/LICENSE.txt)
-
-Summary: A tool to generate gridded ascii tables and station files needed by hydrological models for weather and climate inputs. The package assumes that users have already set up a registration account(s) with Earthdata login as well as authorizing NASA GES DISC data access. Please refer to  <https://disc.gsfc.nasa.gov/data-access> for further details. The package relies on 'curl' <https://curl.se/> commands and library to access NASA remote sensing servers. Users should make sure that their local machines have 'curl' installed properly.  Instructions on creating the ".netrc" and ".urs_cookies" files can be accessed at <https://wiki.earthdata.nasa.gov/display/EL/How+To+Access+Data+With+cURL+And+Wget>. Creating the ".netrc" file at the user machine 'Home' directory and storing the NASA GES DISC user logging information in it is needed to execute the package commands.
+Summary: NASAaccess software can generate gridded ascii tables of CMIP5 and CMIP6 climate data as well as earth observation remote sensing data (GPM, TRMM, GLDAS) needed to drive various hydrological models (e.g., SWAT, VIC, DHSVM, RHESSys, …etc.). The NASAaccess platform is available as software packages (i.e., conda and R packages) as well as an interactive format web-based environmental modeling application for earth observation data developed with the Tethys Platform.
 
 Development: https://github.com/imohamme/NASAaccess
 
 Documentation: https://imohamme.github.io/NASAaccess/
 
-A tool to generate gridded ascii tables and station files needed by hydrological models
+NASAaccess is a tool to generate gridded ascii tables and station files needed by hydrological models
 for weather and climate inputs. The package assumes that users have already set
 up a registration account(s) with Earthdata login as well as authorizing NASA GES
 DISC data access. Please refer to  <https://disc.gsfc.nasa.gov/data-access> for
