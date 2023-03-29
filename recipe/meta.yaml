@@ -1,4 +1,4 @@
-{% set version = '3.3.1' %}
+{% set version = '3.4.1' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -9,8 +9,8 @@ package:
 
 source:
 
-  url: https://github.com/nasa/NASAaccess/archive/v3.3.1.tar.gz
-  sha256: cd61f059e55c1dcd4b202c31ddca29d5bd2cbc66724dcb8067c8fab6d8b24835
+  url: https://github.com/nasa/NASAaccess/archive/V3.4.1.tar.gz
+  sha256: dd38635b738823e26db13e36ca3783ec2ce5e63dce3cbda51ab50ee5f4f084c7
 
 build:
   merge_build_host: True  # [win]
@@ -45,6 +45,8 @@ requirements:
     - r-shapefiles
     - r-sp
     - r-stringr
+    - r-getpass
+    - r-codetools
 
   run:
     - r-base
@@ -61,6 +63,8 @@ requirements:
     - r-shapefiles
     - r-sp
     - r-stringr
+    - r-getpass
+    - r-codetools
 
 test:
   commands:
