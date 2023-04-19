@@ -13,17 +13,7 @@ Development: https://github.com/imohamme/NASAaccess
 
 Documentation: https://imohamme.github.io/NASAaccess/
 
-NASAaccess is a tool to generate gridded ascii tables and station files needed by hydrological models
-for weather and climate inputs. The package assumes that users have already set
-up a registration account(s) with Earthdata login as well as authorizing NASA GES
-DISC data access. Please refer to  <https://disc.gsfc.nasa.gov/data-access> for
-further details. The package relies on 'curl' <https://curl.se/> commands and library
-to access NASA remote sensing servers. Users should make sure that their local machines
-have 'curl' installed properly.  Instructions on creating the ".netrc" and ".urs_cookies"
-files can be accessed at <https://wiki.earthdata.nasa.gov/display/EL/How+To+Access+Data+With+cURL+And+Wget>.
-Creating the ".netrc" file at the user machine 'Home' directory and storing the
-NASA GES DISC user logging information in it is needed to execute the package commands.
-
+The package assumes that users have already set up a registration account(s) with Earthdata login as well as authorizing NASA GES DISC data access. Please refer to  <https://disc.gsfc.nasa.gov/data-access> for further details. Creating the '.netrc' file at the user machine Home directory and storing the user NASA GES DISC logging information in it is done automatically to execute the NASAaccess package commands. The GES DISC user registration access logging information will be processed by masking in the terminal on any major OS. Without providing GES DISC user registration access logging information, the user will receive 'You need to provide your Earthdata GES DISC login to proceed…' message.
 
 Current build status
 ====================
