@@ -13,7 +13,7 @@ Development: https://github.com/imohamme/NASAaccess
 
 Documentation: https://imohamme.github.io/NASAaccess/
 
-The package assumes that users have already set up a registration account(s) with Earthdata login as well as authorizing NASA GES DISC data access. Please refer to  <https://disc.gsfc.nasa.gov/data-access> for further details. Creating the '.netrc' file at the user machine Home directory and storing the user NASA GES DISC logging information in it is done automatically to execute the NASAaccess package commands. The GES DISC user registration access logging information will be processed by masking in the terminal on any major OS. Without providing GES DISC user registration access logging information, the user will receive 'You need to provide your Earthdata GES DISC login to proceed…' message.
+Users need to set up a registration account(s) with Earthdata login as well as authorizing NASA GES DISC data access to generate gridded ascii tables of climate and earth observation remote sensing data. Please refer to  <https://disc.gsfc.nasa.gov/information/documents?title=Data%20Access> for further details. Creating the '.netrc' file at the user machine Home directory and storing the user NASA GES DISC logging information in it is done automatically to execute the NASAaccess package commands. The GES DISC user registration access logging information will be processed by masking in the terminal on any major OS. Without providing GES DISC user registration access logging information, the user will receive 'You need to provide your Earthdata GES DISC login to proceed…' message.
 
 Current build status
 ====================
@@ -101,7 +101,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
