@@ -1,5 +1,4 @@
 {% set version = '4.0.0' %}
-
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -7,27 +6,21 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-
   url: https://github.com/nasa/NASAaccess/archive/v{{ version }}.tar.gz
   sha256: 8f3b2616c0436ac9567f762c8a8efc6603fae99887c9df04ecd551eb2d201e06
 
 build:
- 
   number: 2
-  
   noarch: generic
-  
   rpaths:
     - lib/R/lib/
     - lib/
-
 
 requirements:
   build:
     - {{ posix }}filesystem        # [win]
     - {{ posix }}git
     - {{ posix }}zip               # [win]
-
   host:
     - r-base
     - r-xml
@@ -36,7 +29,6 @@ requirements:
     - r-ncdf4
     - r-stringr
     - r-terra
-
   run:
     - r-base
     - r-xml
@@ -48,7 +40,6 @@ requirements:
 
 test:
   commands:
-    
     - $R -e "library('NASAaccess')"           # [not win]
     - "\"%R%\" -e \"library('NASAaccess')\""  # [win]
 
@@ -71,7 +62,6 @@ about:
     - LICENSE
   doc_url: https://imohamme.github.io/NASAaccess/
   dev_url: https://github.com/imohamme/NASAaccess
-
 
 extra:
   recipe-maintainers:
