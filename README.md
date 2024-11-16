@@ -3,7 +3,7 @@ About r-nasaaccess-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nasaaccess-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/nasa/NASAaccess
+Home: https://github.com/imohamme/NASAaccess
 
 Package license: NASA-1.3
 
@@ -149,6 +149,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 * [@imohamme](https://github.com/imohamme/)
 
