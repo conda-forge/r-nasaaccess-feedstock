@@ -1,4 +1,4 @@
-{% set version = '4.0.0' %}
+{% set version = '4.1.0' %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -6,11 +6,11 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  url: https://github.com/nasa/NASAaccess/archive/v{{ version }}.tar.gz
-  sha256: 8f3b2616c0436ac9567f762c8a8efc6603fae99887c9df04ecd551eb2d201e06
+  url: https://github.com/imohamme/NASAaccess/archive/V{{ version }}.tar.gz
+  sha256: 4478d2900e92b3eef596a5c101af1bfa98253be1c79ec779df4f8e4e52580a96
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -44,7 +44,7 @@ test:
     - "\"%R%\" -e \"library('NASAaccess')\""  # [win]
 
 about:
-  home: https://github.com/nasa/NASAaccess
+  home: https://github.com/imohamme/NASAaccess
   license: NASA-1.3
   summary: NASAaccess software can generate gridded ascii tables of CMIP5 and CMIP6 climate data as well as earth observation remote sensing data (GPM, TRMM, GLDAS) needed to drive various hydrological models (e.g., SWAT, VIC, DHSVM, RHESSys, …etc.). The NASAaccess platform is available as software packages (i.e., conda and R packages) as well as an interactive format web-based environmental modeling application for earth observation data developed with the Tethys Platform.
   description: "Users need to set up a registration account(s) with
